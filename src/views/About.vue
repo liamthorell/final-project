@@ -25,7 +25,7 @@
   </Layout>
 </template>
 <script lang="ts" setup>
-import Layout from "../layouts/Layout.vue";
+import Layout from "../layouts/DefaultLayout.vue";
 </script>
 <style lang="scss" scoped>
 h1 {

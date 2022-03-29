@@ -16,17 +16,19 @@
     <section>
       <div class="page-container container flex cards">
         <div class="card bg-pink">
-          <h3>Tic tac toe</h3>
+          <h3>Dice game</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
             obcaecati? Velit reprehenderit veniam consequatur voluptatem eum
             animi quibusdam ex quidem modi quaerat enim vitae at quia illum
             tempora, eos qui.
           </p>
-          <div class="button">Play</div>
+          <router-link :to="{ name: 'DiceGame' }">
+            <div class="button">Play</div>
+          </router-link>
         </div>
         <div class="card bg-blue">
-          <h3>Game 2</h3>
+          <h3>Slots</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
             obcaecati? Velit reprehenderit veniam consequatur voluptatem eum
@@ -50,12 +52,16 @@
   </Layout>
 </template>
 <script lang="ts" setup>
-import Layout from "../layouts/Layout.vue";
+import Layout from "../layouts/DefaultLayout.vue";
 </script>
 <style lang="scss" scoped>
 h1 {
   font-size: 50px;
   text-align: center;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 .hero {
   min-height: 50vh;

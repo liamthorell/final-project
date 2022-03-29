@@ -109,7 +109,7 @@
 </template>
 
 <script lang="ts" setup>
-import Layout from "../layouts/Layout.vue";
+import Layout from "../layouts/DefaultLayout.vue";
 import { ref, onUnmounted } from "vue";
 
 const courses = ref<HTMLDivElement | null>(null);

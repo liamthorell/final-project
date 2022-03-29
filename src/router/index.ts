@@ -18,6 +18,21 @@ const routes = [
     component: () => import(/* webpackChunkName: "Play" */ "../views/Play.vue"),
   },
   {
+    path: "/play/dice-game",
+    name: "DiceGame",
+    component: () =>
+      import(/* webpackChunkName: "DiceGame" */ "../views/Games/DiceGame.vue"),
+  },
+  {
+    path: "/play/tic-tac-toe",
+    name: "TicTacToe",
+    component: () =>
+      import(
+        /* webpackChunkName: "TicTacToe" */ "../views/Games/TicTacToe.vue"
+      ),
+  },
+
+  {
     path: "/about",
     name: "About",
     component: () =>
