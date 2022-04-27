@@ -28,24 +28,28 @@
           </router-link>
         </div>
         <div class="card bg-blue">
-          <h3>Slots</h3>
+          <h3>Tic tac toe</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
             obcaecati? Velit reprehenderit veniam consequatur voluptatem eum
             animi quibusdam ex quidem modi quaerat enim vitae at quia illum
             tempora, eos qui.
           </p>
-          <div class="button">Play</div>
+          <router-link :to="{ name: 'TicTacToe' }">
+            <div class="button">Play</div>
+          </router-link>
         </div>
         <div class="card bg-orange">
-          <h3>Game 3</h3>
+          <h3>Game clicker</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
             obcaecati? Velit reprehenderit veniam consequatur voluptatem eum
             animi quibusdam ex quidem modi quaerat enim vitae at quia illum
             tempora, eos qui.
           </p>
-          <div class="button">Play</div>
+          <router-link :to="{ name: 'GameClicker' }">
+            <div class="button">Play</div>
+          </router-link>
         </div>
       </div>
     </section>

@@ -1,5 +1,5 @@
 <template>
-  <Layout title="Dice game" backgroundColor="orange">
+  <Layout title="Dice game" backgroundColor="pink">
     <p>
       Rules: <br />
       Win dice game

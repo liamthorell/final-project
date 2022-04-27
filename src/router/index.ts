@@ -31,6 +31,14 @@ const routes = [
         /* webpackChunkName: "TicTacToe" */ "../views/Games/TicTacToe.vue"
       ),
   },
+  {
+    path: "/play/game-clicker",
+    name: "GameClicker",
+    component: () =>
+      import(
+        /* webpackChunkName: "TicTacToe" */ "../views/Games/GameClicker.vue"
+      ),
+  },
 
   {
     path: "/about",

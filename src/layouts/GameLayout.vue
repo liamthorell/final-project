@@ -56,6 +56,7 @@ h1 {
   }
 }
 .card {
+  position: relative;
   width: 80vw;
   max-width: 600px;
   margin: 0 auto;
