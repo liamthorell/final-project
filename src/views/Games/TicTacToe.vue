@@ -137,7 +137,6 @@ const ai = () => {
   });
 
   if (aiBox == null) {
-    console.log("random");
     while (true) {
       aiBox = Math.floor(Math.random() * 9);
       if (boxes.value[aiBox] == null) {

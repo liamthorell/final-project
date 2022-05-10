@@ -12,10 +12,7 @@
           <div class="button">Get started</div>
         </div>
         <div>
-          <img
-            src="https://www.codeschool.fi/wp-content/uploads/2020/10/Kevennetty-GameDev-1024x737.jpg.webp"
-            alt="Game developer"
-          />
+          <img src="@/assets/gaming.jpg" alt="Game developer" />
         </div>
       </div>
     </section>
@@ -86,10 +83,7 @@
     <section class="bg-orange snappy games-section">
       <div class="page-container container flex">
         <div>
-          <img
-            src="https://i.guim.co.uk/img/media/c6f7b43fa821d06fe1ab4311e558686529931492/168_84_1060_636/master/1060.jpg?width=465&quality=45&auto=format&fit=max&dpr=2&s=7f0718a8a5451b88475559f0819a35cd"
-            alt="Game"
-          />
+          <img src="@/assets/gaming-console.jpg" alt="Game" />
         </div>
         <div class="card">
           <h2>Share your game with the world</h2>

@@ -2,13 +2,6 @@
   <Layout title="Game Clicker" backgroundColor="orange">
     <p>Rules: Click on the game to earn G-bucks</p>
 
-    <div style="display: flex">
-      <div class="button" @click="money += 100">100</div>
-      <div class="button" @click="money += 1000">1000</div>
-      <div class="button" @click="money += 10000">10000</div>
-      <div class="button" @click="money += 100000">100000</div>
-    </div>
-
     <div class="separator"></div>
     <p>G-bucks: {{ money }}</p>
     <p>GPS (G-bucks per second): {{ gps }}</p>
