@@ -16,6 +16,7 @@
     <div class="upgrades">
       <div>
         <p>Click Upgrades:</p>
+        <!-- Display all click upgrades -->
         <div v-for="upgrade in clickUpgrades">
           <p>{{ upgrade.name }} {{ upgrade.cost }}$</p>
           <div class="button" @click="upgradeClick(upgrade.id)">Upgrade</div>
@@ -23,6 +24,7 @@
       </div>
       <div>
         <p>GPS Upgrades:</p>
+        <!-- Display all GPS upgrades -->
         <div v-for="upgrade in GPSUpgrades">
           <p>{{ upgrade.name }} {{ upgrade.cost }}$</p>
           <div class="button" @click="upgradeGPS(upgrade.id)">Upgrade</div>
@@ -139,6 +141,7 @@ const GPSUpgrades = ref([
   },
 ]);
 
+// Add money every second based on the GPS amount
 onMounted(() => {
   setInterval(() => {
     gps.value = money.value - prevmoney.value;
@@ -155,9 +158,11 @@ const money = ref(0);
 const prevmoney = ref(0);
 const gps = ref(0);
 
+// Purchase a click upgrade
 const upgradeClick = (id: number) => {
   const upgrade = clickUpgrades.value.find((upgrade) => upgrade.id === id);
 
+  // Check if upgrade is allowed
   if (upgrade && money.value >= upgrade.cost) {
     money.value -= upgrade.cost;
     clickAmount.value += upgrade.amount;
@@ -165,9 +170,11 @@ const upgradeClick = (id: number) => {
   }
 };
 
+// Purchase a GPS upgrade
 const upgradeGPS = (id: number) => {
   const upgrade = GPSUpgrades.value.find((upgrade) => upgrade.id === id);
 
+  // Check if upgrade is allowed
   if (upgrade && money.value >= upgrade.cost) {
     money.value -= upgrade.cost;
     GPSAmount.value += upgrade.amount;

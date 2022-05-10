@@ -20,9 +20,11 @@
 <script setup lang="ts">
 import Layout from "../../layouts/GameLayout.vue";
 import { ref, computed } from "vue";
+
 const playersTurn = ref(true);
 const wrapper = ref<HTMLDivElement | null>(null);
 
+// Array of all the boxes in the game
 const boxes = ref<Record<number, unknown>>({
   0: null,
   1: null,
@@ -35,6 +37,7 @@ const boxes = ref<Record<number, unknown>>({
   8: null,
 });
 
+// All the outcomes then a player can win
 const winOutcomes = [
   [0, 1, 2],
   [3, 4, 5],
@@ -48,6 +51,7 @@ const winOutcomes = [
 
 const score = ref(0);
 
+// Fills a box with a color
 const filLBox = (index: number, isPlayer: boolean) => {
   if (wrapper.value) {
     (wrapper.value.children[index] as HTMLDivElement).style.backgroundColor =
@@ -59,6 +63,7 @@ const filLBox = (index: number, isPlayer: boolean) => {
   boxes.value[index] = isPlayer ? "human" : "ai";
 };
 
+// Check if checkbox exists
 const checkBoxesExist = () => {
   let exists = false;
   Object.values(boxes.value).forEach((e) => {
@@ -67,6 +72,7 @@ const checkBoxesExist = () => {
   return exists;
 };
 
+// Check if player or AI has won
 const checkWin = computed(() => {
   let winner = null;
 
@@ -90,6 +96,7 @@ const checkWin = computed(() => {
   return winner;
 });
 
+// Fires when a user clicks a box
 const boxClick = (number: number) => {
   if (
     playersTurn.value &&
@@ -106,11 +113,13 @@ const boxClick = (number: number) => {
   }
 };
 
+// Make the AI make a move
 const ai = () => {
   if (checkBoxesExist() == false || checkWin.value) return;
 
   let aiBox: number | null = null;
 
+  // Block the player from winning
   winOutcomes.forEach((outcome) => {
     const [a, b, c] = outcome;
     if (
@@ -136,6 +145,7 @@ const ai = () => {
     }
   });
 
+  // Else put on a random box
   if (aiBox == null) {
     while (true) {
       aiBox = Math.floor(Math.random() * 9);
@@ -148,6 +158,7 @@ const ai = () => {
   filLBox(aiBox || 0, false);
 };
 
+// Restarts the game
 const restart = () => {
   if (!wrapper.value) return;
 

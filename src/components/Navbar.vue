@@ -2,7 +2,7 @@
   <nav class="container white" ref="nav">
     <div class="page-container wrapper">
       <ul class="list">
-        <li>Logo</li>
+        <li><img src="@/assets/logo.png" width="30" /></li>
         <li>
           <router-link :to="{ name: 'Home' }" class="link">Home</router-link>
         </li>
@@ -76,6 +76,8 @@ const props = defineProps({
     default: "white",
   },
 });
+
+// When the navColor prop changes, change the background color of the navbar
 watch(
   () => props.navColor,
   () => {

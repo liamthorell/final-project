@@ -109,6 +109,7 @@ import { ref, onUnmounted } from "vue";
 const courses = ref<HTMLDivElement | null>(null);
 const navColor = ref("white");
 
+// Fires when user scrolls, used to change navbar color
 const handleScroll = () => {
   const height = courses.value?.clientHeight || 0;
   if (window.scrollY - height >= 0 && window.scrollY - 2 * height + 100 < 0) {
@@ -118,6 +119,7 @@ const handleScroll = () => {
   }
 };
 
+// Add scroll event listener
 window.addEventListener("scroll", handleScroll);
 onUnmounted(() => {
   window.removeEventListener("scroll", handleScroll);

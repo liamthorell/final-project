@@ -26,7 +26,10 @@ const props = defineProps({
     default: "white",
   },
 });
+
 const bg = ref<HTMLDivElement | null>(null);
+
+// When page is rendered, change the background color of the page to the specified prop
 onMounted(() => {
   bg.value?.classList.add(props.backgroundColor);
 });

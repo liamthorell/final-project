@@ -30,6 +30,7 @@ onMounted(() => {
     "footer-wrapper"
   )[0] as HTMLDivElement;
 
+  // Change the backgorund color based on route name
   if (route.name == "Home") {
     el.style.scrollSnapAlign = "center";
     el.classList.add("pink");

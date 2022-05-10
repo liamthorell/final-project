@@ -15,18 +15,6 @@
     </section>
     <section>
       <div class="page-container container flex cards">
-        <div class="card bg-pink">
-          <h3>Dice game</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
-            obcaecati? Velit reprehenderit veniam consequatur voluptatem eum
-            animi quibusdam ex quidem modi quaerat enim vitae at quia illum
-            tempora, eos qui.
-          </p>
-          <router-link :to="{ name: 'DiceGame' }">
-            <div class="button">Play</div>
-          </router-link>
-        </div>
         <div class="card bg-blue">
           <h3>Tic tac toe</h3>
           <p>
@@ -80,7 +68,7 @@ a {
 }
 
 .card {
-  width: 25%;
+  width: 40%;
   min-width: 220px;
   margin: 20px;
   border-radius: 10px;
