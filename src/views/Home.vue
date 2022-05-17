@@ -12,7 +12,7 @@
           <div class="button">Get started</div>
         </div>
         <div>
-          <img src="@/assets/gaming.jpg" alt="Game developer" />
+          <img src="@/assets/gaming.webp" alt="Game developer" />
         </div>
       </div>
     </section>
@@ -83,7 +83,7 @@
     <section class="bg-orange snappy games-section">
       <div class="page-container container flex">
         <div>
-          <img src="@/assets/gaming-console.jpg" alt="Game" />
+          <img src="@/assets/gaming-console.webp" alt="Game" />
         </div>
         <div class="card">
           <h2>Share your game with the world</h2>

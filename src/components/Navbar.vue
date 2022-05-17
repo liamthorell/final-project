@@ -2,7 +2,9 @@
   <nav class="container white" ref="nav">
     <div class="page-container wrapper">
       <ul class="list">
-        <li><img src="@/assets/logo.png" width="30" /></li>
+        <li>
+          <img src="@/assets/logo.webp" width="30" height="37" alt="Logo" />
+        </li>
         <li>
           <router-link :to="{ name: 'Home' }" class="link">Home</router-link>
         </li>
