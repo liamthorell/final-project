@@ -12,6 +12,7 @@
       width="200"
       class="game-image"
       @click="money += clickAmount"
+      alt="Game icon"
     />
     <div class="upgrades">
       <div>
