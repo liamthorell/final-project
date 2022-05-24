@@ -26,10 +26,6 @@
             </p>
             <div class="button">Purchase</div>
           </div>
-          <img
-            src="https://r2j4y6x9.map2.ssl.hwcdn.net/wp-content/uploads/2018/06/Adding-Polish-to-Games.webp"
-            alt="Game control"
-          />
         </div>
         <div class="card flex bg-pink">
           <div>
@@ -42,10 +38,6 @@
             </p>
             <div class="button">Purchase</div>
           </div>
-          <img
-            src="https://r2j4y6x9.map2.ssl.hwcdn.net/wp-content/uploads/2018/06/Adding-Polish-to-Games.webp"
-            alt="Game control"
-          />
         </div>
         <div class="card flex bg-orange">
           <div>
@@ -58,10 +50,6 @@
             </p>
             <div class="button">Purchase</div>
           </div>
-          <img
-            src="https://r2j4y6x9.map2.ssl.hwcdn.net/wp-content/uploads/2018/06/Adding-Polish-to-Games.webp"
-            alt="Game control"
-          />
         </div>
       </div>
     </section>
